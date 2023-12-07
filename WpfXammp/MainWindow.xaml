@@ -1,0 +1,27 @@
+﻿<Window x:Class="WpfXammp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfXammp"
+        mc:Ignorable="d"
+        Title="MainWindow" Background="#222312" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="txbNaam" HorizontalAlignment="Left" Margin="65,170,0,0" TextWrapping="Wrap" Text="naam" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txbEmail" HorizontalAlignment="Left" Margin="65,210,0,0" TextWrapping="Wrap" Text="email" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txbBalans" HorizontalAlignment="Left" Margin="65,250,0,0" TextWrapping="Wrap" Text="balans" VerticalAlignment="Top" Width="120"/>
+
+        <ListBox x:Name="lsbDataBase"  Margin="321,200,34,37">
+            <ListBoxItem Content="ListBoxItem"/>
+        </ListBox>
+
+        <Button x:Name="btnInsert" Content="Insert" HorizontalAlignment="Left" Margin="65,300,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnUpdate" Content="Update" HorizontalAlignment="Left" Margin="65,340,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" Margin="65,380,0,0" VerticalAlignment="Top"/>
+
+        <TextBox x:Name="txbInputQuery"  HorizontalAlignment="Left" Margin="321,50,0,0" TextWrapping="Wrap" Text="input sql" VerticalAlignment="Top" Width="234" Height="78"/>
+        <Button x:Name="btnExecQuery" Content="execute query" HorizontalAlignment="Left" Margin="477,133,0,0" VerticalAlignment="Top" Click="btnExecQuery_Click"/>
+
+
+    </Grid>
+</Window>
