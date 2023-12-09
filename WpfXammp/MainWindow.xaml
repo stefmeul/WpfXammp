@@ -5,22 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfXammp"
         mc:Ignorable="d"
-        Title="MainWindow" Background="#222312" Height="450" Width="800">
+        Title="MainWindow" Background="#222312" Height="500" Width="800">
     <Grid>
         <TextBox x:Name="txbNaam" HorizontalAlignment="Left" Margin="65,170,0,0" TextWrapping="Wrap" Text="naam" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="txbEmail" HorizontalAlignment="Left" Margin="65,210,0,0" TextWrapping="Wrap" Text="email" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="txbBalans" HorizontalAlignment="Left" Margin="65,250,0,0" TextWrapping="Wrap" Text="balans" VerticalAlignment="Top" Width="120"/>
 
-        <ListBox x:Name="lsbDataBase"  Margin="321,200,34,37">
-            <ListBoxItem Content="ListBoxItem"/>
+        <ListBox x:Name="lsbDataBase" Margin="321,200,34,37" Height="175" Width="450" HorizontalAlignment="Left" VerticalAlignment="Top" SelectionChanged="lsbDataBase_SelectionChanged" >
         </ListBox>
 
-        <Button x:Name="btnInsert" Content="Insert" HorizontalAlignment="Left" Margin="65,300,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnUpdate" Content="Update" HorizontalAlignment="Left" Margin="65,340,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" Margin="65,380,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnInsert" Content="Add new user" HorizontalAlignment="Left" Margin="65,300,0,0" VerticalAlignment="Top" Click="btnInsert_Click"/>
+        <Button x:Name="btnUpdate" Content="Update user" HorizontalAlignment="Left" Margin="65,340,0,0" VerticalAlignment="Top" Click="btnUpdate_Click"/>
+        <Button x:Name="btnDelete" Content="Delete user" HorizontalAlignment="Left" Margin="65,380,0,0" VerticalAlignment="Top" Click="btnDelete_Click"/>
 
-        <TextBox x:Name="txbInputQuery"  HorizontalAlignment="Left" Margin="321,50,0,0" TextWrapping="Wrap" Text="input sql" VerticalAlignment="Top" Width="234" Height="78"/>
-        <Button x:Name="btnExecQuery" Content="execute query" HorizontalAlignment="Left" Margin="477,133,0,0" VerticalAlignment="Top" Click="btnExecQuery_Click"/>
+        <TextBox x:Name="txbInputQuery"  HorizontalAlignment="Left" Margin="321,50,0,0" TextWrapping="Wrap" Text="input sql" VerticalAlignment="Top" Width="234" Height="75"/>
+        <Button x:Name="btnExecQuery" Content="execute query" HorizontalAlignment="Left" Margin="320,130,0,0" VerticalAlignment="Top" Click="btnExecQuery_Click"/>
+        <Button x:Name="btnShowUsers" Content="show users" HorizontalAlignment="Left" Margin="320,400,0,0" VerticalAlignment="Top" Click="btnShowUsers_Click"/>
+        <Label x:Name="lblView" Content="Label" HorizontalAlignment="Left" Margin="65,50,0,0" VerticalAlignment="Top" Height="100" Width="230" Foreground="#FFC6C6C6"/>
 
 
     </Grid>
